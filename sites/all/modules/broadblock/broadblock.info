@@ -1,0 +1,6 @@
+name = The Broad Meuseum Custom Block
+description = Allows The Broad Foundation editors and contributors to create a block with a specfic style for varions parts of www.thebroad.org 
+package = The Broad Museum Display Suite
+core = 7.x
+files [] = broadblock.module
+

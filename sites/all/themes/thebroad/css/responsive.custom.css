@@ -1,0 +1,1124 @@
+/* THE ORDER OF EACH MEDIA QUERY */
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+/* 8) RESPONSIVE SUB NAV */
+/* 9) REGIONS & BLOCKS */
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */  
+
+/*==========  Mobile First Method  ==========*/
+	/* Custom, iPhone Retina 
+	@media only screen and (min-width : 320px) {} */
+
+	/* Extra Small Devices, Phones
+	@media only screen and (min-width : 480px) {}*/ 
+
+	/* Small Devices, Tablets 
+	@media only screen and (min-width : 768px) {} */
+
+	/* Medium Devices, Desktops
+	@media only screen and (min-width : 992px) {} */
+
+	/* Large Devices, Wide Screens 
+	@media only screen and (min-width : 1200px) {} */
+
+
+
+/*THIS WILL RUN ON EVERTHING FIRST*/
+@media only screen and (min-width: 220px){
+		
+/* 1) PAGE & WRAPPER ELEMENTS */
+
+	/*hide element */
+	.thebroad-mobile-hide {
+		display: none;
+	}
+
+	/*unhide element*/
+	.mobile-unhide {
+		display: block;
+	}
+	
+	[name=stSegmentFrame],
+	[name=google_conversion_frame]{
+		/*background: red;*/
+		margin:0 !important;
+		display:none;
+		}
+	
+	
+	
+		
+/* 2) FRONT PAGES */
+	
+/*old front page blocks BUT STILL USED IN PROGRAMS SLIDESHOW */
+
+	.responsive-block-text-containter {
+		color: #FFF;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		top: -65px;
+		background-color: rgba(0,0,0,0.5);
+		height: 52px;
+		display: block;
+		padding: 12px 0 0 0;
+		font-size: 14px;
+		font-family: arial, sans-serif;
+		overflow: hidden;
+	}
+
+        .responsive-block-image-containter,
+        .responsive-block-image-containter img{
+        	width:100%;
+        	height: auto;
+        }
+        
+    /*mobile front page grid*/
+    /*mobile box */
+	.mobile-box-title {
+		display: block;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 40px;
+		color: #FFF !important;
+		top: -45px; 
+		margin: 0;
+		text-align: center;
+	}
+
+	/*sign up form */
+	#mobile-front-page-grid {
+		width: 100%;
+		margin-bottom: 20px;
+		
+	
+	}
+
+	#mobile-front-page-grid-1 {
+		min-width: 100%;
+		/*margin: 0 0 10px 0; */
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+
+#mobile-front-page-grid-4-5 {
+/*background-size:contain;*/
+min-height:190px;
+width:100%;
+text-align:center;
+
+}
+	
+#mobile-front-page-grid-4-5	.mobile-front-page-grid-image{
+	background: url(/sites/default/files/images/Koons_Rabbit_24.png) no-repeat;
+background-size: auto 185px;
+/*background-attachment: fixed;*/
+background-position: center; 
+min-height:190px;
+}
+#mobile-front-page-grid-4-5	.mobile-box-title {
+display: block;
+position: relative;
+background-color: rgba(0, 0, 0, 0.5);
+height: 40px;
+color: #FFF !important;
+top: -45px;
+margin: 0;
+text-align: center;
+
+}
+	
+#mobile-front-page-grid-1 h3 {
+		margin: 15px 0 15px 0;
+	}
+	
+	.mobile-front-page-box h1, 
+	.mobile-front-page-box a {
+		color: #FFF;
+		margin: 0px;
+	}
+   
+	.responsive-link-title,
+	.responsive-link-title a,
+	.responsive-link-title a:active,
+	.responsive-link-title a:link,
+	.responsive-link-title a:visited,	
+	.responsive-block-text-containter a,
+	.responsive-block-text-containter a:hover,
+	.responsive-block-text-containter a:link,
+	.responsive-block-text-containter a:active,
+	.responsive-block-text-containter a:visited{
+	color: #FFF !important;
+	outline:0;
+	}
+	
+	/*new front page /responsive block */
+	.responsive-block-item{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		display:block;
+	}
+	
+	.responsive-thumbnail{}
+		
+	.responsive-thumbnail img {
+		max-width: 100%;
+		height: auto;
+		border: 0;
+		display: block;
+	}
+
+	.responsive-link-title{
+	text-overflow: ellipsis;
+	font-size: 16px;
+	line-height: 17px;
+	display: inline-block;
+	overflow: hidden;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0px;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	height: 48px;
+	text-align: center;
+	}
+	.responsive-link-title span{
+	display: block;
+    padding: 15px 5px 3px 5px;
+    }
+    .responsive-link-title a:hover,
+    .responsive-link-title a:link{
+    	color:#FFF;
+    }
+		/* TODO: SET TO %s */
+		#responsive-sub-nav-inner-wrapper{
+			margin-right: auto;
+			margin-left: auto;
+			width: 100%;	
+		}
+		#responsive-sub-nav .thebroad-blocks-footer{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+/* 3) SLIDE SHOWS & CAROUSELS */
+/*flexinav* this is important */
+.ls-wrapper .liquid-slider {
+background: none !important;
+
+}
+
+.flex-control-nav{
+	padding: 0 !important;
+	margin: 20px 0 20px 0;
+}
+
+#flexslider_views_slideshow_main_art_page_bottom_carousel-flexislider_responsive_art_bottom ul{
+padding:  0px;
+}
+
+#flexslider_views_slideshow_featured_artwork-art_pages_slideshow {
+margin-bottom: 20px;	
+}
+#flexslider_views_slideshow_art_page_bottom_carousel-jcarousel_responsive {
+	margin: 0 0 20px 0;
+}
+
+.view-id-new_front_page_slideshow, .view-display-id-front_page_slideshow {
+margin: 0px 0px 30px 0px;
+}
+
+/*views slid eshow control*/
+.views-slideshow-controls-text-previous {
+	display:none;
+}
+
+.views-slideshow-controls-text-next {
+	display:none;
+}
+
+.views_slideshow_controls_text_pause {
+   display:none;
+}
+
+
+#thebroad-featured-artist-title-flexi-responsive{
+	width: 100%;
+	text-align: center;
+	}
+
+#thebroad-featured-artist-scroll-text-responsive{
+	width: 100%;
+	text-align: center;
+}
+
+/* art-carousel-reponsive */
+#thebroad-featured-art-carousel-reponsive .views-slideshow-controls-top{
+	min-width: 305px;
+	margin: 0 auto;
+}
+
+/*bottom_carousel-jcarousel_responsive*/
+#vscc_controls_art_page_bottom_carousel-jcarousel_responsive .vscc_controls_previous,
+#vscc_controls_art_page_bottom_carousel-jcarousel_responsive .jcarousel-controls-responsive,
+#vscc_controls_art_page_bottom_carousel-jcarousel_responsive .vscc_controls_next{
+	float: left;
+}
+
+/*flexslider_views_slideshow */
+#flexslider_views_slideshow_main_art_page_bottom_carousel-jcarousel_responsive img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* responsive flexslider .slides */
+#thebroad-featured-art-carousel-reponsive .flexslider .slides > li{
+	width: 100% !important;
+}
+	
+	
+	/*featured-artist-controls-mobile*/
+	#thebroad-featured-artist-controls-mobile {
+    min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+	top: -415px;
+	left: 10%;
+	}
+	
+	#thebroad-featured-artist-scroll-text {
+    float: left;
+    margin: -25px 5px;
+    color: #999;
+    }
+    
+
+
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+	#small-nav-mobile{
+	height:auto;
+	}
+
+/* 8) RESPONSIVE SUB NAV */
+	/*mobile search */
+
+        
+    /*sub-nav*/
+	#responsive-sub-nav,
+	#responsive-feature,
+	#responsive-sub-nav .view-footer{
+	width: 100%;
+	overflow: hidden;
+	}
+		
+	#responsive-sub-nav{
+	margin: 0 0 20px 0;
+	}
+		
+		/*sub-nav text*/
+			
+		#responsive-sub-nav h3, 
+		#responsive-sub-nav .block-content ul, 
+		#responsive-sub-nav .block-content ol,
+		#responsive-sub-nav .block{
+			margin: 0px !important;
+			padding: 0px !important;
+		}
+		
+	/*sub-nav*/
+	p.right{
+	margin: 0;
+	padding: 0px !important;
+	}
+		
+	#responsive-sub-nav a{
+	color:#000;
+	font-size:12px;
+	}
+	
+	#responsive-sub-nav a:hover{
+	color:red !important;
+	}
+		
+	.sub-nav{}
+	
+	#responsive-feature .image-field-caption,
+	#responsive-sub-nav .image-field-caption,
+	#responsive-sub-nav .flex-control-paging{
+	display:none;
+	}
+		
+	
+	
+		
+/* 9) REGIONS & BLOCKS */
+	
+	/*menu stucknav*/
+	#menu-bar,
+	#block-multiblock-2,
+	#block-multiblock-4 {
+		display:none;
+	} 
+	
+	 #block-block-4 {
+		display: none;
+	}
+	/*region-sidebar*/
+	.region-sidebar-first,
+	.region-sidebar-second {
+	display: none;
+	}
+	
+	#block-superfish-2 {
+	top: -20px;
+	right: 20px;
+	float: right;
+	text-indent: -999px;
+	}
+	
+	/*mobile feature */
+	/*programs nav slideshow*/
+	
+	#responsive-feature{
+		width:100%;
+	}
+	
+	#responsive-feature .image-field-caption{
+		display:none !important;
+	}
+	
+	#responsive-feature .thebroad-programs-menu,
+	#responsive-feature .thebroad-blocks-footer{
+		text-align: center;
+	}
+	#responsive-feature ul{
+		margin: 0 auto;
+		width:auto;
+		padding: 0
+	}
+	
+	#responsive-feature ul li{
+		margin: 0;
+		padding: 0;
+	}
+	
+	#responsive-feature ul li{
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	#responsive-feature .block-content ol{
+		padding:0;
+	}
+	
+	#responsive-feature p,
+	#responsive-feature a{
+		margin: 0;
+	}
+	
+	#responsive-subcontent{
+		width: 100%;
+	}
+	
+	#responsive-feature .flex-nav-container {}
+	
+	#responsive-feature .flexislider{}
+	
+	#responsive-feature .flex-control-nav {
+	/* padding: 0 !important; */
+	/* margin: 20px 0 20px 0; */
+	position: relative;
+	bottom: 40px;
+	}
+	#responsive-feature .view-footer{
+	position: relative;
+	top: -30px;
+	}
+	
+	#mobile-quote-public-talks-stay-up-to-date{
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;	
+	}
+	
+
+	.block-press-release-responsive {
+		border-bottom: 2px #ddd solid;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.block-press-release-responsive h2,
+	.block-press-release-responsive p{
+		padding: 0 0 0 5px;
+	}
+	
+    .block-connect-responsive-1st{
+		border-top: 2px #ddd solid;
+	}
+	
+	.block-connect-responsive-button{
+		margin: 10px 8px
+	}
+	/* 10) VIEVIS & NODES */
+	/* 11) FIELDS */
+	/* 12) FONTS */
+	/* 13) MEDIA */
+	/* 14) IMAGES */
+	/* 15) FOOTER */ 
+		
+	/*foorter menu*/
+	/*responsive-footer*/
+	#responsive-footer {
+	width:100%;
+	margin: 20px auto;
+	}
+
+	#responsive-footer div#socialTease {
+	min-width: 305px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+
+
+	#responsive-footer-menu {
+	width: 100%;
+	background: #000000;
+	color: #FFF;
+	text-align: center;
+	}
+
+	#responsive-footer-menu ul{
+	padding-left: 0;
+	margin: 0 auto;
+	text-align: center;
+	}
+		
+		
+	#responsive-footer-menu li a{
+	font-size: 11px;
+	color: #FFF !important;
+	}
+		
+	#responsive-footer-menu li a:hover{
+	text-decoration: underline;
+	}
+		
+	#responive-copyright{
+	width:100%;
+	font-size:9px;
+	margin:20px 0 0 0; 
+	}
+		
+	#responive-copyright p{}
+	.region-responsive-footer {
+	margin: 20px auto;
+	}
+	
+
+	
+}/*end min-with 220 */
+
+@media only screen and (min-width:220px) and (max-width:1023px){
+
+/* 1) PAGE & WRAPPER ELEMENTS */
+/*main-content & margin*/
+
+	#main-content {
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	/*global iframe*/
+	iframe {
+		width: 100%;
+		margin: 10px 0 10px 0;
+	}
+
+
+	/*hide element */
+	.thebroad-mobile-hide-links {
+		display: none;
+	}
+
+	/*unhide element*/
+	.mobile-unhide-element {
+		display: block;
+	}
+
+    /*touch enabled inputs*/
+	input#edit-search-block-form--4.form-text,
+	input#edit-search-block-form--2.form-text{
+	/*webkit-user-select: text;*/
+	border: 2px solid rgb(206,206,206);
+	text-align: center;
+	color: #000;
+	font-size: 1.2em;
+	width: 77%;
+	margin: 0 2%;
+	}
+  	
+
+#responsive-search-2 input.form-submit, #responsive-search-3 input.form-submit {
+	-moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+	box-shadow: inset 0px 1px 0px 0px #f29c93;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background: -moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color: #fe1a00;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #d83526;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #b23e35;
+	width: 15%;
+	height: 20px;
+	font-size: 9px;
+	padding: 0px;
+	float:right;
+	margin-top: 1%;
+	}
+
+#responsive-search-3 {
+
+}
+
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/*header */
+#header-wrapper {
+width: 100%;
+border-bottom:solid 1px #eee;
+border-top:solid 1px #eee;
+padding:0;
+margin:0;
+}
+/* 5) MAIN MENU */
+/*main nav superfish */
+#block-superfish-1 {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+/* 6) LOGO */
+
+/* TODO:LOGO FIX */
+.site-logo {
+width: 126px;
+height: 30px; 
+margin: 0 0 0 20px;
+}
+/* 7) STUCK NAV */
+/*stuack-nav */
+#stuckWrap{
+width:100%;
+}
+	
+#slickmenu-2 .slicknav_menu {
+background: #FFF;
+padding: 10px 0 0 0;
+}
+	
+/* 8) RESPONSIVE SUB NAV */
+
+	/* TODO:DROP
+	#responsive-search{
+		display: block;
+		float: right;
+		margin: 15px 20px 0 0;
+		height: 35px;
+	}*/
+	
+	.responsive-search{margin-top: 20px;}	
+    
+    .responsive-search-inner-wrapper{}
+   
+    .search-toggle{ 	
+		cursor: pointer;
+		background: url(../css/images/responsive/black-search-icon.png) no-repeat 0 0 !important;
+		display:block;
+		width:37px;
+		height:37px;
+		position: absolute;
+		/* float: right; */
+		right: 78px;
+		top: 25px; /*SWITCH TO 27 for landscape !*/ 
+		z-index: 99;
+		}
+		
+    #search-2-click-icon{
+    	right:75px;
+    	top: 20px;
+    	}
+
+/* 9) REGIONS & BLOCKS */
+
+.thebroad-blocks-footer-responsive{
+	text-align:center;
+	width:100%;
+	padding:0 8px;
+	color:#000000;
+}
+
+.thebroad-blocks-footer-responsive a{
+	color:#000000;
+}
+
+/* gpanel regions */
+.region-three-33-first, 
+.region-three-33-second,
+.region-three-33-third {
+margin: 0 auto;
+}
+
+/*responsive-subcontent .block & carousel*/
+#responsive-subcontent .block{
+	margin-bottom: 0 !important;
+}
+
+	#thebroad-footer-copyright-left{
+	margin-left: 8px;
+	}
+
+	#thebroad-footer-copyright-right{
+	margin-right: 8px;
+	}
+
+
+/* 10) VIEWS & NODES */
+/*views & node widths*/
+.view-press-release-pages,
+
+.view-building-pages,
+.view-about-pages,
+.nodes-building-pages div.field-name-field-lightbox-image,
+.node-programs-pages{
+	width:100%;
+	overflow: hidden;
+}
+
+.theborad-press-row-wrapper{
+	width:92%;
+}
+
+/*Before Press Page Blocks */
+div.view-display-id-attachment_2 {
+margin-bottom: 20px;
+}
+
+/* 11) FIELDS */
+/*captions*/
+.image-field-caption, 
+.caption {
+margin: 0px 10px 0 0 !important;
+width: 100%;
+}
+
+.field-name-field-artist-website{
+	display:none;
+}
+
+
+/* all possible text fields and p tags vies and nodes
+ORDER: ABOUT BULDING, ART PROGRAMS,PRESS,CONNECT, EMPLOYMENT, TERMS, SITEMANP */
+.node-programs-pages h1.node-title{
+	margin:0 !important;
+}
+.node-programs-pages .node-header{
+	margin-left:0;
+}
+
+.view-about-pages p,
+.field-name-body p,
+.view-building-pages p,
+.field-type-text-with-summary p,
+#aboutCollection p,
+.field-name-field-artwork-caption-and-credit p,
+.field-name-field-artist-website,
+.node-programs-pages div.field-name-field-admission-fee-,
+.view-header p,
+.view-headed h1,
+.view-headed h2,
+.view-headed h3,
+.field-name-field-program-date,
+.field-type-location,
+.field-name-field-sponsor-co-sponsr,
+.field-name-body p,
+#press-title,
+.pressItem h3,
+h1.email-us,
+.theborad-press-row-wrapper,
+.view-header p,
+.employmentListing p,
+.employmentListing h1,
+.employmentListing h2,
+.employmentListing h3,
+.bottomBorder p,
+.bottomBorder h1,
+#sitemap
+{
+padding-left: 8px;
+padding-right: 8px;
+}
+
+/*NEW* 11-20-14 */
+	.field-name-field-pdf-attachemnt {
+		padding: 0 0 0 5px;
+	}
+
+	.view-press-release-pages {
+		margin: 0px !important
+	}
+
+	.view-display-id-attachment_1, .view-display-id-attachment_2, .theborad-press-row-wrapper p, .theborad-press-row-wrapper .date-display-single {
+		margin-left: 0px !important;
+		padding-left: 0px !important;
+	}
+
+	.view-press-release-pages .attachment-after p {
+		margin-left: 0px;
+	}
+
+	.attachment-after p {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+	.sharethis-wrapper {
+		margin: 20px 0 0 8px;
+	}
+
+	.employmentListing ul li,
+	address {
+		margin: 0 0 0 10px;
+	}
+	
+/* 12) FONTS */
+/*node titles*/
+
+	.node-content h2, h1#page-title, h1.node-title, .broad-title h1, .node-title {
+		margin-left: 5px;
+	}
+
+	#accordion p {
+		font-size: 24px;
+	}
+
+
+/* 13) MEDIA */
+/* 14) IMAGES */
+/*images in lighbox*/
+
+	/*TODO:DROP */
+	#thebroad-lightbox {
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		max-width: 100%;
+		height: auto;
+	}
+
+
+/*500 images */
+.image-style-broad-pages-scale-500px-width{
+	width: 100%;
+}
+
+/* 15) FOOTER */
+
+} /*END 220-1024 */
+
+/*
+ * Tablets/Desktops/laptops and up
+ *  RESET Section
+ */
+
+@media only screen and (min-width : 1024px) {
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+#mobile-front-page-grid {width: 100%; margin: 0 auto} /* Center page without wrapper */
+/* column grid */
+.g1,.g2,.g3{display:block; position: relative; margin-left: 1%; margin-right: 1%}
+/* 1 column grid */
+.g1,.g2,.g3{width:98.0%}
+
+#mobile-front-page-grid img{max-width: 100%;	_width: 100%} /* Fluid images */
+
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+/* 8) RESPONSIVE SUB NAV */
+/* 9) REGIONS & BLOCKS */
+#menu-bar,
+#block-multiblock-2,
+#block-multiblock-4{
+display:block;
+}
+	
+#block-block-4 {
+display: block;
+}
+/* sub-nav */
+#slickmenu-2,
+#slickmenu-1{
+display:none;
+}
+
+.region-sidebar-first,
+.region-sidebar-second{
+	display: block !important;
+	}
+
+#responsive-sub-nav,
+#responsive-feature{
+display:none;
+}
+/* sub-nav */
+#block-views-programs-pages-block-3{
+/*width:220px*/
+}
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */  
+}/*end min 1024*/
+
+/*FOLDING FLUID GRID
+< 767px			- 1-Column Fluid Grid
+768px - 1023px	- 2-Column Fluid Grid
+> 1024px			- 3-Column Fluid Grid
+Change widths as necessary
+------------------------------------------- */
+
+/*==========  Mobile First Method  ==========*/
+
+/* The Broad Lightbox Degrades HERE */
+	/* Custom, iPhone Retina */ 
+@media only screen and (min-width: 320px) {}
+@media only screen and (max-width: 320px) {
+	.thebroad-lightbox, #thebroad-lightbox {
+		width: 245px;
+		margin: 0px auto;
+	}
+
+	.thebroad-lightbox-image {
+		float: none;
+		margin: 0px 0px 10px 0px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 480px) {
+	.thebroad-lightbox, #thebroad-lightbox {
+		width: 245px;
+		margin: 0px auto;
+	}
+
+	.thebroad-lightbox-image {
+		float: none;
+		margin: 0px 0px 10px 0px;
+	}
+}
+
+/*Thebroad lightbox Single Image LANDSCAP Degrades HERE  For all modern cell phones*/
+/*NEXSUS 4&5 */
+@media only screen and (min-width: 640px) { 
+.thebroad-lightbox-single-image {
+width: 540px;
+margin: 0 auto;
+}	
+	
+}	
+
+/*Iphone 6 */
+@media only screen and (min-width: 667px) { 
+.thebroad-lightbox-single-image {
+width: 540px;
+margin: 0 auto;
+}	
+	
+}
+
+/*Iphone 6 plus*/
+@media only screen and (min-width: 736px) { 
+.thebroad-lightbox-single-image {
+width: 540px;
+margin: 0 auto;
+}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width: 768px) { 
+
+	/* COLUMN GRID - move to prtraits */
+	.g1,.g2,.g3 {display:inline; float: left}
+	
+	/* 2 COLUMN GRID */
+	.g1 {width:48.0%}
+	.g2 {width:48.0%}
+	.g3 {width:98.0%}
+	#mobile-front-page-grid {
+    width: 100%;
+    margin: 0 auto;
+	}
+	
+	/*Navigation Elements
+/*Main NAV */
+.slicknav_nav a {
+	font-size: 20px;
+}
+
+/*Sub NAV */
+#responsive-sub-nav {
+	margin: 20px 0 20px 0;
+}
+
+#responsive-sub-nav-inner-wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+#accordion p {
+	font-size: 24px;
+}
+
+#responsive-sub-nav a {
+	color: #000;
+	font-size: 16px;
+}
+
+/*IMAGES */
+.thebroad-lightbox-single-image {
+	width: 540px;
+	margin: 0 auto;
+}	
+
+	
+}/*end min 768px */
+	
+	/* Small Devices, Tablets */
+	@media only screen and (max-width: 768px) { 
+	#responsive-search {
+		display: block;
+		float: none;
+		/* margin: 15px 58px 0 0; */
+		height: 40px;
+		margin-left: 70%;
+		margin-top: 19px;
+		/* position: fixed; */
+		/* clear: both; */
+		width: 300px;
+		}
+
+	
+	} /*end max */
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+
+	}
+
+
+/* LANDSCAPE TABLET/NETBOOK/LAPTOP */
+@media only screen and (min-width: 1024px) { 
+	
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+
+/* 9) REGIONS & BLOCKS */
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */
+	
+	/* 8) RESPONSIVE SUB NAV */
+	/*mobile search */
+	#responsive-search{
+		/*display:none;*/
+	}	
+	
+	#search-1-click-icon,
+	#search-2-click-icon,
+	.search-toggle{
+		display: none !important;
+	}
+	/* SAFARI FIX */
+	/*region-sidebar*/
+	.region-sidebar-first,
+	.region-sidebar-second{
+	display: block !important;
+	}
+	/* 3 COLUMN GRID */
+	.g1 {width:31.333%}
+	.g2 {width:64.667%;}
+	.g3 {width:98.0%}
+	
+	.views-slideshow-controls-text-next,
+	.views-slideshow-controls-text-previous {
+	display: block;
+	}	
+
+	/* TODO:LOGO FIX  KEEP*/
+	#stuckNav .site-logo{
+    width: 126px;
+    height: 30px; 
+	margin: 0 0 0 0px;
+	/*has 20px on left in responsive*/
+}
+
+}/* end min-width 1024 */
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+
+	}/*end 1200 */
+	
+
+	/* WIDESCREEN */
+	/* Increased body size for legibility */
+	@media only screen and (min-width: 1400px) { 
+	/*body {font-size:116.75%; background:url('../images/28px_grid_bg.gif') 0 1.25em; max-width:1440px} /* 18.5px / 28px */
+	}

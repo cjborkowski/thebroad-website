@@ -1,0 +1,101 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+
+/* THE SECTION ORDER OF EACH MEDIA QUERY */
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+/* 8) RESPONSIVE SUB NAV */
+/* 9) REGIONS & BLOCKS */
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */  
+
+
+/* iPad 3 & 4 * LANDSCAPE*/
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2){
+	
+	/*social-tease-upper*/
+	 #block-block-4 {
+		display: none !important;
+	}
+	
+	/*logo*/
+	.site-logo {
+		width: 100px;
+		height: 24px;
+		margin-left:10px
+	}
+	
+	/*main nav superfish */
+	/*TODO ADUJUST UL opening points */
+	#block-superfish-1 {
+		position:absolute ;
+		top: 20px;
+		right: 20px;
+	}
+	/*views and widths */
+	
+	
+	#thebroad-lightbox img {
+	margin: 0px auto;
+	width: 100%;
+	
+}
+	.region-sidebar-first,
+	.region-sidebar-second{
+		display:block;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* NOTE: BECAUSE OF AT THEME SETTINGS BREAK POINTS THIS SHOULD RESIDE IN SMARTPHONE PROTRAIT*/
+
+/*-- HTC OneX, LG Nexus 4, Blackberry Z10, Samsung Galaxy Nexus, HTC Evo LTE, Galaxy S III (I9300), Samsung Galaxy Note, Samsung Galaxy Note II, Sony Xperia S,  -*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:1280px) and (orientation : landscape) {
+	
+	/* THE SECTION ORDER OF EACH MEDIA QUERY */
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+/* 8) RESPONSIVE SUB NAV */
+/* 9) REGIONS & BLOCKS */
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */  
+	
+	
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		max-width: 100%;
+		height:auto;
+	}
+}

@@ -1,0 +1,29 @@
+.imageCreditTitle{
+	font-weight: bold;
+	font-size:.8em;
+	font-family: arial, sans-serif;
+	font-style:italic;
+	color:#000000;
+}
+
+.thebroad-copy-and-creditlines,
+.field-name-field-artwork-caption-and-credit,
+.artwork{
+   font-size:.8em;
+
+}
+
+.imageCredit {
+	color:#000000;
+	font-size:.8em;
+	font-family: arial, sans-serif;
+    font-weight: bold;
+}
+
+.copyCredit {
+	color:#bbb;
+	font-size:.8em;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+}
+

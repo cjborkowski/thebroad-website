@@ -1,0 +1,18 @@
+<?php
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function thebroad_jcarousel_jcarousel_skin_info() {
+  $skins = array();
+ 
+  $skins['skin1'] = array(
+    'title' => t('The Broad Art Page Carousel'),
+    'file' => 'skins/thebroad-art-jcarousel.css',
+  );
+  $skins['skin2'] = array(
+    'title' => t('The Broad'),
+    'file' => 'skins/thebroad-default-jcarousel.css',
+  );
+ 
+  return $skins;
+}

@@ -1,0 +1,42 @@
+<?php
+$title =& $row->title;
+$title = str_replace('The Un-Private Collection:', '<em>The Un-Private Collection:</em>', $title);
+echo '<div class="responsive-block-text-containter">';
+echo '<a href ="/programs#'. $row->nid.'" class="side-menu-a"/ >';
+echo $data->field_field_program_date[0]['rendered']['#markup'] .'<br>';
+echo  $title.'</a>';
+echo '</div>';
+
+//dpm ($data->field_field_program_date[0]['rendered']);
+?>
+
+
+<?php
+$title =& $row->title;
+$title = str_replace('The Un-Private Collection:', '<em>The Un-Private Collection:</em>', $title);
+$image_path = $data->field_field_lightbox_image[0]['rendered']['#item']['uri'];
+$mobile_image = array(
+  'style_name' => '320_width_mobile_slide',
+  'path' => $image_path,
+  'width' => '',
+  'height' => '',
+  'alt' => $title ,
+  'title' => $title ,
+  );
+?>
+<div class="responsive-block-item g1">
+<div class="responsive-thumbnail">
+<a href="/programs#<?php print $row->nid; ?>" class="responsive-link">
+<?php print theme('image_style',$mobile_image);?>
+</a>
+</div>
+
+<a href="programs" class="responsive-link-title">
+<span>
+<?php $data->field_field_program_date[0]['rendered']['#markup']; ?>
+<br>
+<?php print $title; ?>
+</span>
+</a>
+
+</div><!-- end:responsive-block-item -->

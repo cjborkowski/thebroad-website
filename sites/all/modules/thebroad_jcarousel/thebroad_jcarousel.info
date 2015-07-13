@@ -1,0 +1,7 @@
+name = The Broad Jcarousel Custom Skins
+description = A views plugin to style the JCarousel Module Output & CSS.
+package = The Broad Museum Display Suite
+dependencies[] = views
+dependencies[] = jcarousel
+core = 7.x
+files[] = thebroad_jcarousel.module

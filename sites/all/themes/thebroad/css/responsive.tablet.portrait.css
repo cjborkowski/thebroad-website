@@ -1,0 +1,40 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices */
+
+/* THE SECTION ORDER OF EACH MEDIA QUERY */
+/* 1) PAGE & WRAPPER ELEMENTS */
+/* 2) FRONT PAGES */
+/* 3) SLIDE SHOWS & CAROUSELS */
+/* 4) HEADER */
+/* 5) MAIN MENU */
+/* 6) LOGO */
+/* 7) STUCK NAV */
+/* 8) RESPONSIVE SUB NAV */
+/* 9) REGIONS & BLOCKS */
+/* 10) VIEWS & NODES */
+/* 11) FIELDS */
+/* 12) FONTS */
+/* 13) MEDIA */
+/* 14) IMAGES */
+/* 15) FOOTER */  
+
+
+html {
+  font-size: 81.3%;
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+

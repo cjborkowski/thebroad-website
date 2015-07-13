@@ -1,0 +1,434 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices */
+/*html {
+  font-size: 112.5%;
+}*/
+
+/* --iphone 3 and Lower LANCSCAPE */
+@media screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation : landscape){
+	/*responsive sub-nav*/
+		#responsive-sub-nav,
+		#responsive-sub-nav .view-footer{
+			width: 100%;
+			overflow: hidden;
+		}
+		#responsive-sub-nav a{
+			color:#000;
+		}
+		#responsive-sub-nav a:hover{
+			color:red !important;
+		}
+		
+		/*sub-nav ul/li/ol*/
+		#responsive-sub-nav h3, 
+		#responsive-sub-nav .block-content ul, 
+		#responsive-sub-nav .block-content ol,
+		#responsive-sub-nav .block{
+			margin: 0px !important;
+			padding: 0px !important;
+		}
+		p.right{
+		margin: 0 0 0 30px !important;
+		}
+				
+		.responsive-block-text-containter{
+		color: #FFF;
+        width:100%;
+        position: relative;
+        top: -60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 60px;
+        display: block;
+        text-align:center;
+        }
+        
+        #responsive-sub-nav-inner-wrapper{
+			margin-right: auto;
+			margin-left: auto;
+			width: 100%;	
+		}
+		
+		#responsive-sub-nav .thebroad-blocks-footer{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		
+        .sub-nav{}
+        
+       #responsive-sub-nav .flexslider-views-slideshow-main-frame ul{
+        	padding: 0px !important;
+        }
+
+		#responsive-feature .image-field-caption,
+		#responsive-sub-nav .image-field-caption,
+		#responsive-sub-nav .flex-control-paging{
+			display:none !important;
+		}
+		
+		 #responsive-feature .flex-nav-container {
+		height: auto;
+		}
+    
+		
+		.image-style-broad-pages-scale-500px-width {
+		width: 480px;
+		height:auto;
+		}
+		
+		input#edit-search-block-form--4.form-text,
+		input#edit-search-block-form--2.form-text{
+		width: 73%;
+		}
+		
+/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+		
+}/*end iphone 3
+
+/*-- iPhone 4, 4S, iPod Touch 4Gen-- LANSCAPE*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+
+	.image-style-broad-pages-scale-500px-width {
+		width: 480px;
+		height: auto;
+	}
+
+	#search-1-click-icon {
+	}
+	#search-2-click-icon {
+		
+		right: 75px;
+	}
+	input#edit-search-block-form--4.form-text, input#edit-search-block-form--2.form-text {
+		width: 73%;
+	}
+
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+		
+
+	#search-1-click-icon, #search-2-click-icon {
+		right: 75px;
+	}
+	input#edit-search-block-form--4.form-text, input#edit-search-block-form--2.form-text {
+		width: 73%;
+	}
+
+		/*responsive sub-nav*/
+		#responsive-sub-nav,
+		#responsive-sub-nav .view-footer{
+			width: 100%;
+			overflow: hidden;
+		}
+		#responsive-sub-nav a{
+			color:#000;
+		}
+		#responsive-sub-nav a:hover{
+			color:red !important;
+		}
+		
+		/*sub-nav ul/li/ol*/
+		#responsive-sub-nav h3, 
+		#responsive-sub-nav .block-content ul, 
+		#responsive-sub-nav .block-content ol,
+		#responsive-sub-nav .block{
+			margin: 0px !important;
+			padding: 0px !important;
+		}
+		p.right{
+		margin: 0 0 0 30px !important;
+		}
+				
+		.responsive-block-text-containter{
+		color: #FFF;
+        width: 100%;
+        position: relative;
+        top: -60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 60px;
+        display: block;
+        text-align: center;
+        }
+        
+        #responsive-sub-nav-inner-wrapper{
+			margin-right: auto;
+			margin-left: auto;
+			width: 100%;	
+		}
+		
+		#responsive-sub-nav .thebroad-blocks-footer{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		
+        .sub-nav{}
+        
+       #responsive-sub-nav .flexslider-views-slideshow-main-frame ul{
+        	padding: 0px !important;
+        }
+
+		#responsive-feature .image-field-caption,
+		#responsive-sub-nav .image-field-caption,
+		#responsive-sub-nav .flex-control-paging{
+			display:none;
+		}
+          #responsive-feature .flex-nav-container {
+		height: auto;
+		}
+    
+        
+        /*responsive blocks*/
+        .responsive-block-text-containter a{
+		color: #FFF !important;
+		}
+		
+		.responsive-block-text-containter a:hover{
+		color: red;
+		}
+		
+		/*views flexi slideshow ul*/
+		.flexslider-views-slideshow-main-frame ul,
+		.slides{
+			padding: 0px !important;
+		}
+		
+		/*title fields*/
+		.node-title{
+		width: 100%;
+		word-wrap: break-word;
+		margin-left: 5px;
+		}
+		
+		/*node-title*/
+		.bottomBorder h1,
+		h1.node-title{
+		margin-left: 5px;
+		}
+
+		/*image fields */
+		.field-name-field-lightbox-image, .image-style-broad-pages-scale-500px-width {
+		max-width: 568px;
+		height: auto;
+		}
+
+		/*media */
+		.media-vimeo-outer-wrapper,
+		.media-vimeo-outer-wrapper,
+		.field-name-field-youtube-embed, .field-type-media {
+		}
+
+		#thebroad-lightbox img {
+		margin: 0px auto;
+		max-width: 100%;
+        }
+        
+        /*mobile front page blocks*/
+       /*mobile box */
+
+	.mobile-box-title {
+		display: block;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 40px;
+		color: #FFF !important;
+		top: -48px; /*h1 computes as 46 */
+		margin: 0;
+		text-align: center;
+		text-align: center;
+	}
+
+	.mobile-front-page-box h1, .mobile-front-page-box a {
+		color: #FFF;
+		margin: 0px;
+		font-size: 30px;
+	}
+
+	#mobile-front-page-grid-1 {
+		padding-top: 0px;
+	}
+	.mobile-front-page-box {
+		width: 50%;
+		height: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		float: left;
+	}
+	
+	#main-content .node-16,
+	.view-employment-pages{
+    margin-top: 20px;
+	}
+	
+/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+	
+}/* end iphone 4 landscape*/
+
+/*-- iPhone 5 LANDSCAPE */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+{
+	#main-content .node-16,
+	.view-employment-pages{
+    margin-top: 20px;
+	}
+	.mobile-box-title {
+		display: block;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 40px;
+		color: #FFF !important;
+		top: -53px;
+		margin: 0;
+		text-align: center;
+		text-align: center;
+	}
+	.mobile-front-page-box h1, .mobile-front-page-box a {
+		color: #FFF;
+		margin: 0px;
+	}
+
+	#mobile-front-page-grid-1 {
+		padding-top: 0px;
+	}
+	.mobile-front-page-box {
+		width: 50%;
+		height: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		float: left;
+	}
+	
+    .responsive-link-title{
+    	position:relative;
+    	top: -48px;
+    }
+    #responsive-feature .flex-nav-container {
+	height: auto;
+	}
+    
+    /* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+    
+} /*end iphone 5 landscape*/
+
+/*-- HTC OneX, HTC Evo LTE, LG Nexus 4, Blackberry Z10 -*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:640px) and (orientation : landscape) {
+	.responsive-block-item{
+		width:100%;
+		height:auto;
+        overflow: hidden;
+        margin-bottom: -53px;
+	}
+    .responsive-thumbnail img {
+		max-width:100%;
+		height:auto;
+		border: 0;
+		display: block;
+		}
+	
+	.field-name-body img{
+		width: 640px !important;
+		max-width: 100%;
+		height:auto;
+		margin: 0px auto;
+	}
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+/*Shows up on 1phone 4-5*/
+/*-- HTC OneX, HTC Evo LTE, LG Nexus 4, Blackberry Z10 -*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:780px) and (orientation : landscape) {
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		max-width:780px;
+		max-width: 100%;
+		height:auto;
+	}
+
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+
+/*-- HTC OneX, HTC Evo LTE, LG Nexus 4, Blackberry Z10 - Landscape*/
+@media only screen and (max-device-width:640px) and (-webkit-min-device-pixel-ratio: 2)and (orientation : landscape) {
+
+.responsive-thumbnail img {
+		max-width: 100%;
+		height: auto;
+		border: 0;
+		display: block;
+	}
+
+
+	.responsive-block-item {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: -53px;
+	}
+
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+/*Nesus 5  Lanscape*/
+@media only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3.0) and (orientation: landscape)  {
+  * {
+    /*background-color: black;*/
+  }
+  	.responsive-thumbnail img {
+		max-width: 100%;
+		height: auto;
+		border: 0;
+		display: block;
+	}
+  .responsive-block-item {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: -53px;
+	}
+ 	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+
+  
+}/* end nexsus 5 landscape */

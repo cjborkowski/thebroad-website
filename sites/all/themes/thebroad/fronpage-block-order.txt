@@ -1,0 +1,18 @@
+3col 3x33 Gpanel col 1
+ 
+MC Stay in Touch Front Page	Region for MC Stay in Touch Front Page block 
+Webcam Teaser	Region for Webcam Teaser block 
+Front Page Programs -FSL_View	Region for Front Page Programs -FSL_View block 
+
+	
+3col 3x33 Gpanel col 2
+ 
+Front Page Building Block	Region for Front Page Building Block block 
+Tweets Front Page Block	        Region for Tweets Front Page Block block 
+Learn About The Broad Front Page-FPSS	Region for Learn About The Broad Front Page-FPSS block 
+	
+3col 3x33 Gpanel col 3
+ 
+Art Front Page Explore The Collection-FPSS	Region for Art Front Page Explore The Collection-FPSS block 
+Follow Us Front Page	Region for Follow Us Front Page block 
+Press Room Front Page Block-FPSS

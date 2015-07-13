@@ -1,0 +1,107 @@
+$view = new view();
+$view->name = 'art_page_bottom_carousel';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Art Page Bottom Carousel';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Featured Artists';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '0';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'jcarousel';
+$handler->display->display_options['style_options']['wrap'] = 'circular';
+$handler->display->display_options['style_options']['skin'] = 'skin1';
+$handler->display->display_options['style_options']['visible'] = '';
+$handler->display->display_options['style_options']['scroll'] = '1';
+$handler->display->display_options['style_options']['auto'] = '0';
+$handler->display->display_options['style_options']['autoPause'] = 1;
+$handler->display->display_options['style_options']['easing'] = '';
+$handler->display->display_options['style_options']['vertical'] = 0;
+$handler->display->display_options['row_plugin'] = 'fields';
+/* Header: Carousel Controls */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['ui_name'] = 'Carousel Controls';
+$handler->display->display_options['header']['area']['content'] = '<script>
+(function($) {
+    $(function() {
+    
+var prev = \'<a href="javascript:void(0)" class="jcarousel-prev jcarousel-prev-horizontal" disabled="false"></a>\';
+var next = \'<a href="javascript:void(0)" class="jcarousel-next jcarousel-next-horizontal" disabled="false"></a>\';
+var text = \'<div class="tb-control-item"><h3>Scroll To See More</h3></div>\';
+    //wipe them out
+   $( ".jcarousel-prev" ).append(text);
+    //$( ".jcarousel-next" ).remove();
+    //set them up here
+  //  $(".jcarousel-prev-horizontal").clone().appendTo(\'#carousel-controls\');
+    //$(".jcarousel-next-horizontal").clone().prependTo(\'#carousel-controls\');
+ 	       
+    });
+})(jQuery);
+</script> ';
+$handler->display->display_options['header']['area']['format'] = 'php_code';
+/* Field: Content: Front Page Image */
+$handler->display->display_options['fields']['field_preview_sharing_image']['id'] = 'field_preview_sharing_image';
+$handler->display->display_options['fields']['field_preview_sharing_image']['table'] = 'field_data_field_preview_sharing_image';
+$handler->display->display_options['fields']['field_preview_sharing_image']['field'] = 'field_preview_sharing_image';
+$handler->display->display_options['fields']['field_preview_sharing_image']['label'] = '';
+$handler->display->display_options['fields']['field_preview_sharing_image']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_preview_sharing_image']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['field_preview_sharing_image']['settings'] = array(
+  'image_style' => 'fratured_artist_310px_height_scale_ss',
+  'image_link' => 'content',
+);
+/* Field: Content: Artist Of The Artwork */
+$handler->display->display_options['fields']['field_artist_']['id'] = 'field_artist_';
+$handler->display->display_options['fields']['field_artist_']['table'] = 'field_data_field_artist_';
+$handler->display->display_options['fields']['field_artist_']['field'] = 'field_artist_';
+$handler->display->display_options['fields']['field_artist_']['label'] = '';
+$handler->display->display_options['fields']['field_artist_']['element_label_type'] = 'h1';
+$handler->display->display_options['fields']['field_artist_']['element_label_class'] = 'thebroad-art-page-carousel-title';
+$handler->display->display_options['fields']['field_artist_']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_artist_']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['field_artist_']['settings'] = array(
+  'link' => 0,
+);
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'art_pages' => 'art_pages',
+);
+/* Filter criterion: Content: Promote to Carousel (field_promote_to_carousel) */
+$handler->display->display_options['filters']['field_promote_to_carousel_value']['id'] = 'field_promote_to_carousel_value';
+$handler->display->display_options['filters']['field_promote_to_carousel_value']['table'] = 'field_data_field_promote_to_carousel';
+$handler->display->display_options['filters']['field_promote_to_carousel_value']['field'] = 'field_promote_to_carousel_value';
+$handler->display->display_options['filters']['field_promote_to_carousel_value']['value'] = array(
+  1 => '1',
+);
+
+/* Display: art page carousel */
+$handler = $view->new_display('page', 'art page carousel', 'art_page_carousel_1');
+$handler->display->display_options['path'] = 'art/bottom-carousel';

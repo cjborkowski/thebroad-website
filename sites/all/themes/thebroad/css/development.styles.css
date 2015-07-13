@@ -1,0 +1,37 @@
+/*Styles For Dev.thebroad.org */
+
+/* FONTS */
+
+/* LAYOUT */
+
+/* REGIONS */
+
+#thebroad-2nd-blocks, #block-block-1{
+/*border: gray 1px solid;*/
+}
+
+#block-block-1 h2{
+/*color: red !important; */
+}
+
+/* BLOCKS */
+
+/* NODES */
+
+.thebroad-about-node{
+}
+
+
+/* Views */
+
+/* Slideshow region */
+
+.thebroad-slideshow{
+}
+
+.node-content p{
+/*color: red !important; */
+}
+
+
+

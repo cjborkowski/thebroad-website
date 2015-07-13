@@ -1,0 +1,468 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the default font size on small devices */
+html {
+  font-size: 112.5%;
+}
+
+/*
+ * ALL IPHONES
+ */
+@media only screen and (min-width: 320px) and (max-width: 1136px)and (orientation : portrait) {
+  /* 
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   * 
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+/*  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+}*/
+#responsive-search {
+display: block;
+float: right;
+}
+
+	/* TODO:DROP */
+    /*#responsive-search-2 input.form-submit,
+	#responsive-search-3 input.form-submit {
+		display: none !important;
+	}*/
+
+	input#edit-search-block-form--4.form-text, input#edit-search-block-form--2.form-text {
+	}
+	
+	
+    /* TODO:CHECK THIS */
+	.search-toggle {
+		top: 36px;
+	}
+
+	/*in site map*/
+	.submenu {
+		padding-left: 2em;
+	}
+
+	#sitemap ul li {
+		margin-top: 1em;
+		display: inline-block;
+	}
+	
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+
+.node-building-pages .field-name-field-lightbox-image{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 245px;
+	max-width: 100%;
+	height:auto;
+}
+	
+}
+/*Iphone 3 portrait*/
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 1) and (orientation : portrait){
+/*thebroad-lightbox-image */
+
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		max-width: 100%;
+		height:auto;
+	}
+	.field-name-body img{
+	
+		max-width: 100%;
+		height:auto;
+		margin: 0px auto;
+	}
+
+	/*mobile front page grid*/
+    /*mobile box */
+
+	.mobile-box-title {
+		display: block;
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 40px;
+		color: #FFF !important;
+		top: -45px; /*h1 computes as 46 */
+		margin: 0;
+		text-align: center;
+		text-align: center;
+	}
+
+	#mobile-front-page-grid {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	/*.mobile-front-page-box {
+		width: 305px;
+		height: 170px;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+	
+	#mobile-front-page-grid {width: 100%; margin: 0 auto;} /* Center page without wrapper */
+	/* column grid */
+	.g1,.g2,.g3{
+		display:block; 
+		position: relative; /*margin-left: 1%; margin-right: 1% */ 
+		}
+	
+	/* 1 column grid */
+	.g1,.g2,.g3{
+		width:100%;
+		}
+
+	#mobile-front-page-grid img{max-width: 100%;	_width: 100%;} /* Fluid images */
+
+	
+	#mobile-front-page-grid-1 {
+		padding-top: 10px;
+	}
+
+	#mobile-front-page-grid-1 h3 {
+		margin: 15px 0 15px 0;
+	}
+	.mobile-front-page-box h1, .mobile-front-page-box a {
+		color: #FFF;
+		margin: 0px;
+	}
+	
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+
+} 
+
+/*iPhone 4 portait*/
+@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) and and (orientation : portrait){
+/*thebroad-lightbox-image */
+
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		width: 320px;
+		max-width: 100%;
+		height:auto;
+	}
+	.field-name-body img{
+		width: 640px !important;
+		max-width: 100%;
+		height:auto;
+		margin: 0px auto;
+	}
+	
+	/*html{
+		background:red;
+	}*/
+
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+
+}
+
+/* iPhone 5 portait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
+	/*sub-nav*/
+	#slickmenu-2 {
+		display: block;
+		/*float: left !important;
+		margin-left: 10%; */
+	}
+	
+	/*html{
+		background:blue;
+	}*/
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+
+/* Iphone 5 & 4 portait see http://cssmediaqueries.com/target/ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait){
+	    
+	 /*region-sidebars*/   
+	.region-sidebar-first,
+	.region-sidebar-second{
+	display:none;
+	}
+	
+	/*social-tease-upper*/
+	 #block-block-4 {
+		display: none !important;
+	}
+
+	/*sub-nav*/
+	#slickmenu-2 {
+		display: block;
+		/*float: left !important;
+		margin-left: 10%;*/
+	}
+
+	/*responive-footer */	
+	.region-responsive-footer{
+		margin: 20px auto;
+	}
+	
+	/*blocks general*/
+	.block{
+	margin-bottom:0 !important;	
+	}
+	/* TODO:LOGO FIX  DROP*/
+	/*logo*/
+	/*.site-logo {
+		width: 100px;
+		height: 24px;
+		margin-left:10px
+	}*/
+	
+/*views-slide-show-controls*/
+.views-slideshow-controls-text-previous{
+	display:none;
+}
+
+.views-slideshow-controls-text-next{
+	display:none;
+}
+
+.views_slideshow_controls_text_pause{
+   display:none;
+}
+
+#thebroad-lightbox img {
+margin: 0px auto;
+max-width: 100%;
+height:auto;
+}
+.field-name-body img{
+
+		max-width: 100%;
+		height:auto;
+		margin: 0px auto;
+	}
+/*moving this from first query above
+ * 
+ */
+/*mobile front page grid*/
+/*mobile box */
+.mobile-box-title{
+display: block;
+position: relative;
+background-color: rgba(0, 0, 0, 0.5);
+height: 40px;
+color: #FFF !important;
+top: -46px; /*h1 computes as 46 */
+margin: 0;
+text-align:center;
+}
+
+#mobile-front-page-grid{
+	width:100%;
+	margin-bottom: 20px;
+}
+
+.mobile-front-page-box{
+width:100%;
+height: 170px;
+margin-left: auto;
+margin-right: auto;
+}
+#mobile-front-page-grid-1{
+
+}
+
+#mobile-front-page-grid-1 h3{
+	margin: 15px 0 15px 0;
+}
+.mobile-front-page-box h1,
+.mobile-front-page-box a{
+	color:#FFF ;
+	margin:0px;
+}
+  
+  /*region-sidebars*/
+  .region-sidebar-first,
+  .region-sidebar-second{
+   display:none;
+		}
+  
+  
+  /*superfish */
+  .sf-accordion-toggle {
+		background: url(/sites/all/themes/thebroad/css/images/responsive/black-menu-icon.png);
+		text-indent: -990px;
+		width: 36px;
+		height: 32px;
+	}
+	#superfish-1-toggle {
+		width: 36px;
+		height: 32px;
+		display: block;
+	} 
+    /* TODO:LOGO FIX  DROP*/
+    /*logo*/
+	/*.site-logo {
+		width: 100px;
+		height: 24px;
+		margin-left:10px
+	} */
+	
+	
+	#block-superfish-1 {
+		/* margin: -35px 0px 0px -10px; */
+		position:absolute ;
+		top: 20px;
+		right: 20px;
+	}
+		/*page-wrapper*/
+	#page-wrapper{
+		width:100%;
+	}
+	/*header-wrapper*/
+	#header-wrapper {
+	background: white;
+	margin: 0px 0px 20px 0px;
+	width: 100%;
+	height: 50px;
+	-webkit-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+	transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+	border-bottom:solid 1px #eee;
+	border-top:solid 1px #eee;
+	padding: 10px 0 10px 0;
+	}
+
+	/*views-slide-show-controls*/
+	.views-slideshow-controls-text-previous{
+	display:none;
+	}
+
+	.views-slideshow-controls-text-next{
+	display:none;
+	}
+
+	.views_slideshow_controls_text_pause{
+   	display:none;
+	}
+	
+	/*title fields un-set width ?*/
+	.node-header,
+	#main-content-header,
+	h1.node-title,
+	h1.broad-title,
+	h1.bottomBorder,
+	h2.field-label {
+		word-wrap: break-word;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+	
+#mobile-front-page-grid {
+	width: 100%; 
+	margin: 0 auto
+	} 
+	
+/* Center page without wrapper */
+/* column grid */
+.g1,.g2,.g3{display:block; position: relative; /*margin-left: 1%; margin-right: 1% */ }
+
+/* 1 column grid */
+.g1,.g2,.g3{width:100%}
+
+#mobile-front-page-grid img{max-width: 100%;	_width: 100%} /* Fluid images */
+/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+		
+}/*end iphone 5 & 4 portrait*/
+
+/* Iphone 6 portrait*/
+@media only screen and (min-device-width: 375px) and (orientation : portrait){ 
+
+#mobile-front-page-grid {width: 100%; margin: 0 auto} /* Center page without wrapper */
+/* column grid */
+.g1,.g2,.g3{display:block; position: relative; /*margin-left: 1%; margin-right: 1% */}
+/* 1 column grid */
+.g1,.g2,.g3{width:100%}
+
+#mobile-front-page-grid img{max-width: 100%;	_width: 100%} /* Fluid images */
+	
+	
+	#thebroad-lightbox{}
+	
+	#thebroad-lightbox img {
+		margin: 0px auto;
+		width: 375px;
+		max-width: 100%;
+		height:auto;
+	}
+	.field-name-body img{
+		max-width: 100%;
+		height:auto;
+		margin: 0px auto;
+	}
+    /* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+/*-- HTC OneX, HTC Evo LTE, LG Nexus 4, Blackberry Z10 -*/
+@media only screen and (min-device-width:384px) and (-webkit-min-device-pixel-ratio: 2)and (orientation : portrait) {
+ .responsive-block-item {
+		margin-bottom: -55px;
+	}
+	/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+}
+
+/*-- HTC OneX, LG Nexus 4, Blackberry Z10, Samsung Galaxy Nexus, HTC Evo LTE, Galaxy S III (I9300), Samsung Galaxy Note, Samsung Galaxy Note II, Sony Xperia S,  -*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:1280px) and (orientation: portrait) {
+	/* TODO:CHECK THIS */
+	.search-toggle {}
+}
+
+
+/*Nexus 5  Portrait*/
+@media only screen and (min-width: 360px) and (-webkit-min-device-pixel-ratio: 3.0) and (orientation: portrait)  {
+  * {
+    /*background-color: black;*/
+  }
+ 
+  .responsive-block-item {
+		margin-bottom: -55px;
+	}
+/* lightbox2 */
+		#bottomNavZoom {
+		display:none !important;
+		}
+	/* TODO:CHECK THIS */
+	.search-toggle {
+		top: 25px;
+	}
+}/* end nexsus 5 portait */
